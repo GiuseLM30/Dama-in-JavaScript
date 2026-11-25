@@ -1,0 +1,109 @@
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ */
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.bottoni{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+.display{
+  display: grid;
+  grid-template-columns: repeat(8,50px);
+  grid-template-rows: repeat(8,50px);
+  z-index: 0;
+}
+
+body{
+  display: flex;
+  background-image: url("https://assetsio.gnwcdn.com/checkers-board.jpg?width=690&quality=85&format=jpg&dpr=3&auto=webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.js-button {
+  position: relative;
+  background-color: white;
+  border: none;
+}
+
+.damaB{
+  font-size: 30px;
+  color: white;
+  -webkit-text-stroke: 0.6px black;
+}
+
+.pezziBianchi{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  place-content: center;
+  border-radius: 50%;
+  background-color: rgb(255, 251, 205);
+  border-width: 1px;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 0 5px black;
+}
+ 
+.pezziNeri{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  place-content: center;
+  border-radius: 50%;
+  background-color: rgb(42, 42, 42);
+  border-width: 1px;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.damaN{
+  font-size: 30px;
+  color: white;
+  -webkit-text-stroke: 0.6px black;
+}
+
+.border{
+  background-color: #3d2514;
+  z-index: -1;
+  display: inline-block;
+  padding: 25px;
+}
+
+.restart-btn{
+  font-size: 20px;
+  color: white;
+  width: 130px;
+  height: 60px;
+  background: none;
+  border-color: white;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.main{
+  transform: scale(1.3);
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 
+    300px
+    auto
+    300px;
+}
