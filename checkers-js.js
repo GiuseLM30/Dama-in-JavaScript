@@ -486,7 +486,9 @@ document.querySelector('.restart-btn').addEventListener('click', ()=>{
   ['', 'o', '', 'o', '', 'o', '', 'o',],
   ['o', '', 'o', '', 'o', '', 'o', '',]
 ]
-
+currentPiece = null;
+oldRow = null;
+oldCol = null;
 currentPlayer='o';
 renderBoard();
 })
